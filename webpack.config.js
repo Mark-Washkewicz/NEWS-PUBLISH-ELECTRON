@@ -10,10 +10,11 @@ module.exports = {
   },
   //dev
   devServer: {
+    port: 9000,
     publicPath: '/build/', //matches the path for the production output
     proxy: {
       '/**': {
-        target: 'http://localhost:3000' //will this affect web socket ports?
+        target: 'http://localhost:3001' //will this affect web socket ports?
       }
     }
   },
