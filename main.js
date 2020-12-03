@@ -1,11 +1,12 @@
 const { BrowserWindow, app } = require('electron')
-require('./server/server.js')
+// const express = require('./server/server.js')
 
 let mainWindow = null
 
 function main() {
+  // express
   mainWindow = new BrowserWindow()
-  mainWindow.loadURL(`http://localhost:3001/`)
+  mainWindow.loadURL(`http://localhost:9000/`)
   mainWindow.on('close', event => {
     mainWindow = null
   })
